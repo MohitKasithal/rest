@@ -11,19 +11,18 @@ import {
   CardActions,
   CardContent,
   CardMedia,
-  Container,
   Typography,
 } from "@mui/material";
 function Menu() {
   return (
     <div>
       <Header />
-      <Container
-        maxWidth="xl"
+      <Box
         sx={{
           backgroundImage: `url(${menuBack})`,
           backgroundSize: "cover",
           filter: "brightness(70%)",
+          width: "100%",
         }}>
         <Box
           sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
@@ -54,7 +53,7 @@ function Menu() {
             </Card>
           ))}
         </Box>
-      </Container>
+      </Box>
       <Footer />
     </div>
   );

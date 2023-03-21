@@ -1,4 +1,3 @@
-import { Container } from "@mui/material";
 import React from "react";
 import contimg from "../images/contImg.jpg";
 import Footer from "../component/Footer";
@@ -22,12 +21,12 @@ function Contact() {
   return (
     <div>
       <Header />
-      <Container
-        maxWidth="xl"
+      <Box
         sx={{
           backgroundImage: `url(${contimg})`,
           backgroundSize: "cover",
           filter: "brightness(70%)",
+          width: "100%",
         }}>
         <Box sx={{ height: { xs: "91vh", sm: "91vh" } }}>
           <Box
@@ -82,7 +81,7 @@ function Contact() {
             </TableContainer>
           </Box>
         </Box>
-      </Container>
+      </Box>
       <Footer />
     </div>
   );

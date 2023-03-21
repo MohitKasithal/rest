@@ -7,12 +7,12 @@ function About() {
   return (
     <>
       <Header />
-      <Container
-        maxWidth="xl"
+      <Box
         sx={{
           backgroundImage: `url(${abt3})`,
           backgroundSize: "cover",
           filter: "brightness(70%)",
+          width: "100%",
         }}>
         <Stack sx={{ width: { xs: "auto", md: 900 }, margin: "auto" }}>
           <Box
@@ -98,7 +98,7 @@ function About() {
             </Typography>
           </Box>
         </Stack>
-      </Container>
+      </Box>
 
       <Footer />
     </>

@@ -1,4 +1,4 @@
-import { Button, Container, Stack, Typography } from "@mui/material";
+import { Button, Box, Stack, Typography } from "@mui/material";
 import React from "react";
 import Footer from "../component/Footer";
 import Header from "../component/Header";
@@ -9,11 +9,11 @@ function PagenotFound() {
   return (
     <div>
       <Header />
-      <Container
-        maxWidth="xl"
+      <Box
         sx={{
           backgroundImage: `url(${menuBack})`,
           backgroundSize: "cover",
+          width: "100%",
           filter: "brightness(50%)",
         }}>
         <Stack justifyContent={"center"} alignItems={"center"}>
@@ -45,7 +45,7 @@ function PagenotFound() {
             </Link>
           </Stack>
         </Stack>
-      </Container>
+      </Box>
       <Footer />
     </div>
   );
